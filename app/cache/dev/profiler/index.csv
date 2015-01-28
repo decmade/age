@@ -1,1 +1,9 @@
 07ef2f,127.0.0.1,GET,http://localhost:8000/,1422449425,
+5cc371,127.0.0.1,GET,http://localhost:8000/app/example,1422449987,
+919af1,127.0.0.1,GET,http://localhost:8000/app/example,1422450005,
+fe3f96,127.0.0.1,GET,http://localhost:8000/app/example,1422450006,
+3d652c,127.0.0.1,GET,http://localhost:8000/hello,1422450011,4a3f8a
+4a3f8a,127.0.0.1,GET,http://localhost:8000/hello,1422450011,
+5c88ca,127.0.0.1,GET,http://localhost:8000/hello/john,1422450022,dbfc05
+dbfc05,127.0.0.1,GET,http://localhost:8000/hello/john,1422450022,
+567768,127.0.0.1,GET,http://localhost:8000/,1422450073,
