@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Symfony Standard Edition
 ========================
 
@@ -67,3 +68,10 @@ Enjoy!
 [11]: http://symfony.com/doc/2.6/cookbook/logging/monolog.html
 [12]: http://symfony.com/doc/2.6/cookbook/assetic/asset_management.html
 [13]: http://symfony.com/doc/2.6/bundles/SensioGeneratorBundle/index.html
+=======
+# age
+Guess your age down to the second
+
+This application allows a user to enter their date of birth and will return their age broken down in years, months, 
+days, and seconds.
+>>>>>>> 10ec8f9f118a29fd31b5b59d62c47fd8e04d2739
