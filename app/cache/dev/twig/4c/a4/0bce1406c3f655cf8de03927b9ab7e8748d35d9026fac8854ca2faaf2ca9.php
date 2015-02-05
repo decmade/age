@@ -40,29 +40,36 @@ class __TwigTemplate_4ca40bce1406c3f655cf8de03927b9ab7e8748d35d9026fac8854ca2faa
         echo "Age Calculator";
     }
 
-    // line 5
+    // line 6
     public function block_body($context, array $blocks = array())
     {
-        // line 6
+        // line 7
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_start');
         echo "
 ";
-        // line 7
+        // line 8
         echo $this->env->getExtension('form')->renderer->searchAndRenderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'widget');
         echo "
 ";
-        // line 8
+        // line 9
         echo         $this->env->getExtension('form')->renderer->renderBlock((isset($context["form"]) ? $context["form"] : $this->getContext($context, "form")), 'form_end');
         echo "
 
 ";
     }
 
-    // line 12
+    // line 13
     public function block_javascripts($context, array $blocks = array())
     {
-        // line 13
-        echo "<script type=\"text/javascript\">
+        // line 14
+        echo "
+<script type=\"text/javascript\">
+    \$(document).ready(function() {
+        \$('[name=\"form\"]').attr('action', \"";
+        // line 17
+        echo $this->env->getExtension('routing')->getPath("age_calc_calculate");
+        echo "\" );
+    });
 </script>
 ";
     }
@@ -79,6 +86,6 @@ class __TwigTemplate_4ca40bce1406c3f655cf8de03927b9ab7e8748d35d9026fac8854ca2faa
 
     public function getDebugInfo()
     {
-        return array (  65 => 13,  62 => 12,  55 => 8,  51 => 7,  47 => 6,  44 => 5,  38 => 3,  11 => 1,);
+        return array (  70 => 17,  65 => 14,  62 => 13,  55 => 9,  51 => 8,  47 => 7,  44 => 6,  38 => 3,  11 => 1,);
     }
 }

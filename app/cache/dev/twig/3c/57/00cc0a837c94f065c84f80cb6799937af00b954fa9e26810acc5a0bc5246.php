@@ -35,15 +35,19 @@ class __TwigTemplate_3c5700cc0a837c94f065c84f80cb6799937af00b954fa9e26810acc5a0b
         echo "        <link rel=\"icon\" type=\"image/x-icon\" href=\"";
         echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("favicon.ico"), "html", null, true);
         echo "\" />
+        <script src=\"";
+        // line 8
+        echo twig_escape_filter($this->env, $this->env->getExtension('assets')->getAssetUrl("js/jquery-1.11.2.min.js"), "html", null, true);
+        echo "\" ></script>
     </head>
     <body>
         ";
-        // line 10
-        $this->displayBlock('body', $context, $blocks);
         // line 11
+        $this->displayBlock('body', $context, $blocks);
+        // line 12
         echo "        ";
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 12
+        // line 13
         echo "    </body>
 </html>
 ";
@@ -60,12 +64,12 @@ class __TwigTemplate_3c5700cc0a837c94f065c84f80cb6799937af00b954fa9e26810acc5a0b
     {
     }
 
-    // line 10
+    // line 11
     public function block_body($context, array $blocks = array())
     {
     }
 
-    // line 11
+    // line 12
     public function block_javascripts($context, array $blocks = array())
     {
     }
@@ -82,6 +86,6 @@ class __TwigTemplate_3c5700cc0a837c94f065c84f80cb6799937af00b954fa9e26810acc5a0b
 
     public function getDebugInfo()
     {
-        return array (  69 => 11,  64 => 10,  59 => 6,  53 => 5,  47 => 12,  44 => 11,  42 => 10,  35 => 7,  33 => 6,  29 => 5,  23 => 1,);
+        return array (  73 => 12,  68 => 11,  63 => 6,  57 => 5,  51 => 13,  48 => 12,  46 => 11,  40 => 8,  35 => 7,  33 => 6,  29 => 5,  23 => 1,);
     }
 }
