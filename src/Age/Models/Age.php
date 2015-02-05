@@ -64,6 +64,7 @@ class Age
 				continue;
 			}
 			
+			// if there is output already then add delimeter string
 			if ($output) {
 				$output .= $delimeter;
 			}
