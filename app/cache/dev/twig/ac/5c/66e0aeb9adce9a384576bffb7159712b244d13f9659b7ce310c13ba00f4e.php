@@ -47,7 +47,7 @@ class __TwigTemplate_ac5c66e0aeb9adce9a384576bffb7159712b244d13f9659b7ce310c13ba
 <p>
 \tSince you were born on ";
         // line 8
-        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["age"]) ? $context["age"] : $this->getContext($context, "age")), "getBirthDate", array(), "method"), "format", array(0 => "l, F n, Y"), "method"), "html", null, true);
+        echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["age"]) ? $context["age"] : $this->getContext($context, "age")), "getBirthDate", array(), "method"), "format", array(0 => "l, F j, Y"), "method"), "html", null, true);
         echo ", ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["age"]) ? $context["age"] : $this->getContext($context, "age")), "getFullAge", array(), "method"), "html", null, true);
         echo " have passed.

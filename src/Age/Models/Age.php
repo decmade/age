@@ -17,20 +17,23 @@ class Age
 	private $birthDate;
 	
 	/**
-	 * attempts to set the birth datetime value
-	 * using the date string passed
+	 * sets the birthDate value
 	 * 
 	 * @param string $birthDate
 	 */
 	public function setBirthDate($birthDate)
 	{
-		// attempt to create a DateTime value using the string
-		try {
-			$dateValue = new DateTime($birthDate);
-			$this->birthDate = $dateValue;
-		} catch(Exeption $e) {
-			// stub
-		} 
+		if ( $birthDate instanceof DateTime) {
+			$this->birthDate = $birthDate;
+		} else {
+			// attempt to create a DateTime value using the string
+			try {
+				$dateValue = new DateTime($birthDate);
+				$this->birthDate = $dateValue;
+			} catch(Exeption $e) {
+				// stub
+			} 
+		}
 		
 		return $this;
 	}

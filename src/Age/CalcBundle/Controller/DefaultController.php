@@ -29,8 +29,9 @@ class DefaultController extends Controller
     	if (!$dob) {
     		$request = $this->get('request');
     		if ($request->getMethod() == 'POST') {
-    			// stub
-    			$dob = '1979-08-08'; // testing logic with default value
+    			$form = $this->getDobInputForm();
+    			$form->handleRequest($request);
+    			$dob = $form->get('birthDate')->getData();
     		}
     	}
     	
