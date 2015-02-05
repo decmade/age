@@ -12,8 +12,9 @@ class DefaultController extends Controller
 	 */
     public function indexAction()
     {
-    	$dob = '1979-08-08';
-    	return $this->calculateAction($dob);
+    	return $this->inputAction();
+//     	$dob = '1979-08-08';
+//     	return $this->calculateAction($dob);
     	
         //return $this->render('AgeCalcBundle:Default:index.html.twig', array('calculation' => $calculationResult) );
     }
@@ -29,5 +30,24 @@ class DefaultController extends Controller
     	$age->setBirthDate($dob);
     	
     	return $this->render('AgeCalcBundle:Default:calculate.html.twig', array('age' => $age ));
+    }
+    
+    /**
+     * input the date of birth form action
+     * 
+     */
+    public function inputAction()
+    {
+    	$age = $this->get('age');
+    	
+    	$form = $this->createFormBuilder($age)
+    		->add('birthDate', 'date', array(
+    				'years' => range(date('Y') - 100, date('Y')), 
+    				'label' => 'Enter Your Date of Birth:')
+    		)
+    		->add('calculate', 'submit', array('label' => 'Calculate Age'))
+    		->getForm();
+    	
+    	return $this->render('AgeCalcBundle:Default:input.html.twig', array('form' => $form->createView() ));
     }
 }
