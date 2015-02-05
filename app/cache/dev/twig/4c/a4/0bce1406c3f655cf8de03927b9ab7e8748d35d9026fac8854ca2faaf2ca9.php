@@ -20,6 +20,7 @@ class __TwigTemplate_4ca40bce1406c3f655cf8de03927b9ab7e8748d35d9026fac8854ca2faa
         $this->blocks = array(
             'title' => array($this, 'block_title'),
             'body' => array($this, 'block_body'),
+            'javascripts' => array($this, 'block_javascripts'),
         );
     }
 
@@ -56,6 +57,15 @@ class __TwigTemplate_4ca40bce1406c3f655cf8de03927b9ab7e8748d35d9026fac8854ca2faa
 ";
     }
 
+    // line 11
+    public function block_javascripts($context, array $blocks = array())
+    {
+        // line 12
+        echo "<script type=\"text/javascript\">
+</script>
+";
+    }
+
     public function getTemplateName()
     {
         return "AgeCalcBundle:Default:input.html.twig";
@@ -68,6 +78,6 @@ class __TwigTemplate_4ca40bce1406c3f655cf8de03927b9ab7e8748d35d9026fac8854ca2faa
 
     public function getDebugInfo()
     {
-        return array (  54 => 8,  50 => 7,  46 => 6,  43 => 5,  37 => 3,  11 => 1,);
+        return array (  64 => 12,  61 => 11,  55 => 8,  51 => 7,  47 => 6,  44 => 5,  38 => 3,  11 => 1,);
     }
 }

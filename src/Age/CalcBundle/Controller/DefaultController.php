@@ -46,8 +46,11 @@ class DefaultController extends Controller
     				'label' => 'Enter Your Date of Birth:')
     		)
     		->add('calculate', 'submit', array('label' => 'Calculate Age'))
+    		->setAction($this->generateUrl('age_calc_calculate'))
     		->getForm();
     	
-    	return $this->render('AgeCalcBundle:Default:input.html.twig', array('form' => $form->createView() ));
+    	return $this->render('AgeCalcBundle:Default:input.html.twig', array(
+    			'form' => $form->createView(),
+    	));
     }
 }
