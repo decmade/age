@@ -26,6 +26,14 @@ class DefaultController extends Controller
      */
     public function calculateAction($dob)
     {
+    	if (!$dob) {
+    		$request = $this->get('request');
+    		if ($request->getMethod() == 'POST') {
+    			// stub
+    			$dob = '1979-08-08'; // testing logic with default value
+    		}
+    	}
+    	
     	$age = $this->get('age');
     	$age->setBirthDate($dob);
     	
