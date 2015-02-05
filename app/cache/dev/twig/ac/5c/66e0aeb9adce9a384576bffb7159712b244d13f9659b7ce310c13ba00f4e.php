@@ -52,6 +52,12 @@ class __TwigTemplate_ac5c66e0aeb9adce9a384576bffb7159712b244d13f9659b7ce310c13ba
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["age"]) ? $context["age"] : $this->getContext($context, "age")), "getFullAge", array(), "method"), "html", null, true);
         echo " have passed.
 </p>
+<p>
+    <a href=\"";
+        // line 11
+        echo $this->env->getExtension('routing')->getPath("age_calc_homepage");
+        echo "\">Return Home</a>
+</p>
 ";
     }
 
@@ -67,6 +73,6 @@ class __TwigTemplate_ac5c66e0aeb9adce9a384576bffb7159712b244d13f9659b7ce310c13ba
 
     public function getDebugInfo()
     {
-        return array (  50 => 8,  46 => 6,  43 => 5,  37 => 3,  11 => 1,);
+        return array (  58 => 11,  50 => 8,  46 => 6,  43 => 5,  37 => 3,  11 => 1,);
     }
 }
