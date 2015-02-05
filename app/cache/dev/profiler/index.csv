@@ -7,3 +7,15 @@ fe3f96,127.0.0.1,GET,http://localhost:8000/app/example,1422450006,
 5c88ca,127.0.0.1,GET,http://localhost:8000/hello/john,1422450022,dbfc05
 dbfc05,127.0.0.1,GET,http://localhost:8000/hello/john,1422450022,
 567768,127.0.0.1,GET,http://localhost:8000/,1422450073,
+1f46df,127.0.0.1,GET,http://localhost:8000/,1423141585,
+2f982d,127.0.0.1,GET,http://localhost:8000/config,1423142087,0f63ae
+0f63ae,127.0.0.1,GET,http://localhost:8000/config,1423142087,
+7fd277,127.0.0.1,GET,http://localhost:8000/app_dev.php/_configurator/,1423142144,
+779945,127.0.0.1,GET,http://localhost:8000/app_dev.php/_configurator/step/0,1423142145,
+ac8a2a,127.0.0.1,GET,http://localhost:8000/app_dev.php/_configurator/step/0,1423142159,04c6a0
+04c6a0,127.0.0.1,POST,http://localhost:8000/app_dev.php/_configurator/step/0,1423142159,
+b6b0b6,127.0.0.1,GET,http://localhost:8000/,1423142813,
+30133a,127.0.0.1,GET,http://localhost:8000/,1423142825,
+93ebbb,127.0.0.1,GET,http://localhost:8000/_configurator/,1423142829,
+f0d057,127.0.0.1,GET,http://localhost:8000/_configurator/step/0,1423142830,
+d57c62,127.0.0.1,GET,http://localhost:8000/,1423142866,
