@@ -127,9 +127,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
 
         }
 
-        // homepage
-        if ($pathinfo === '/app/example') {
-            return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+        if (0 === strpos($pathinfo, '/a')) {
+            // age_calc_homepage
+            if ($pathinfo === '/age') {
+                return array (  '_controller' => 'Age\\CalcBundle\\Controller\\DefaultController::indexAction',  '_route' => 'age_calc_homepage',);
+            }
+
+            // homepage
+            if ($pathinfo === '/app/example') {
+                return array (  '_controller' => 'AppBundle\\Controller\\DefaultController::indexAction',  '_route' => 'homepage',);
+            }
+
         }
 
         // _welcome

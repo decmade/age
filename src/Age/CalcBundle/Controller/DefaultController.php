@@ -6,8 +6,21 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('AgeCalcBundle:Default:index.html.twig', array('name' => $name));
+    	$dob = '1979-08-08';
+    	$calculationResult = $this->calculateAction($dob);
+    	
+        return $this->render('AgeCalcBundle:Default:index.html.twig', array('calculation' => $calculationResult) );
+    }
+    
+    /**
+     * calculate age action
+     * 
+     * @param string $dob (yyyy-mm-dd)
+     */
+    public function calculateAction($dob)
+    {
+    	return 'here';
     }
 }
