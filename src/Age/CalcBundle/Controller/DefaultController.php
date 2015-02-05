@@ -46,19 +46,34 @@ class DefaultController extends Controller
      */
     public function inputAction()
     {
-    	$age = $this->get('age');
-    	
-    	$form = $this->createFormBuilder($age)
-    		->add('birthDate', 'date', array(
-    				'years' => range(date('Y') - 100, date('Y')), 
-    				'label' => 'Enter Your Date of Birth:')
-    		)
-    		->add('calculate', 'submit', array('label' => 'Calculate Age'))
-    		->setAction($this->generateUrl('age_calc_calculate'))
-    		->getForm();
+    	$form = $this->getDobInputForm();
     	
     	return $this->render('AgeCalcBundle:Default:input.html.twig', array(
     			'form' => $form->createView(),
     	));
+    }
+    
+    /**
+     * helper function
+     * 
+     * generates the input form for capturing the date
+     * of birth binded to an age object
+     * 
+     * @return Form
+     */
+    private function getDobInputForm()
+    {
+    	$age = $this->get('age');
+    	 
+    	$form = $this->createFormBuilder($age)
+    	->add('birthDate', 'date', array(
+    			'years' => range(date('Y') - 100, date('Y')),
+    			'label' => 'Enter Your Date of Birth:')
+    	)
+    	->add('calculate', 'submit', array('label' => 'Calculate Age'))
+    	->setAction($this->generateUrl('age_calc_calculate'))
+    	->getForm();
+    	
+    	return $form;
     }
 }
