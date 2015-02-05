@@ -18,6 +18,7 @@ class __TwigTemplate_ac5c66e0aeb9adce9a384576bffb7159712b244d13f9659b7ce310c13ba
         }
 
         $this->blocks = array(
+            'title' => array($this, 'block_title'),
             'body' => array($this, 'block_body'),
         );
     }
@@ -33,17 +34,23 @@ class __TwigTemplate_ac5c66e0aeb9adce9a384576bffb7159712b244d13f9659b7ce310c13ba
     }
 
     // line 3
+    public function block_title($context, array $blocks = array())
+    {
+        echo "Age Calculator";
+    }
+
+    // line 5
     public function block_body($context, array $blocks = array())
     {
-        // line 4
+        // line 6
         echo "<h1>Results:</h1>
 <p>
 \tSince you were born on ";
-        // line 6
+        // line 8
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["age"]) ? $context["age"] : $this->getContext($context, "age")), "getBirthDate", array(), "method"), "format", array(0 => "l, F n, Y"), "method"), "html", null, true);
         echo ", ";
         echo twig_escape_filter($this->env, $this->getAttribute((isset($context["age"]) ? $context["age"] : $this->getContext($context, "age")), "getFullAge", array(), "method"), "html", null, true);
-        echo " has passed.
+        echo " have passed.
 </p>
 ";
     }
@@ -60,6 +67,6 @@ class __TwigTemplate_ac5c66e0aeb9adce9a384576bffb7159712b244d13f9659b7ce310c13ba
 
     public function getDebugInfo()
     {
-        return array (  43 => 6,  39 => 4,  36 => 3,  11 => 1,);
+        return array (  50 => 8,  46 => 6,  43 => 5,  37 => 3,  11 => 1,);
     }
 }

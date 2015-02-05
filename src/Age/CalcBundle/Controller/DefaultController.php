@@ -6,6 +6,10 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
 class DefaultController extends Controller
 {
+	/**
+	 * default controller action
+	 * 
+	 */
     public function indexAction()
     {
     	$dob = '1979-08-08';
