@@ -9,9 +9,9 @@ class DefaultController extends Controller
     public function indexAction()
     {
     	$dob = '1979-08-08';
-    	$calculationResult = $this->calculateAction($dob);
+    	return $this->calculateAction($dob);
     	
-        return $this->render('AgeCalcBundle:Default:index.html.twig', array('calculation' => $calculationResult) );
+        //return $this->render('AgeCalcBundle:Default:index.html.twig', array('calculation' => $calculationResult) );
     }
     
     /**
@@ -24,6 +24,6 @@ class DefaultController extends Controller
     	$age = $this->get('age');
     	$age->setBirthDate($dob);
     	
-    	return print_r($age->getFullAge(), true);
+    	return $this->render('AgeCalcBundle:Default:calculate.html.twig', array('age' => $age ));
     }
 }

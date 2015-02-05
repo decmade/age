@@ -36,6 +36,17 @@ class Age
 	}
 	
 	/**
+	 * retrieves the birth date object
+	 * 
+	 * @return \DateTime
+	 */
+	public function getBirthDate()
+	{
+		return $this->birthDate;
+	}
+	
+	
+	/**
 	 * returns the formatted result
 	 * of the time span since the $birthDate value
 	 * 

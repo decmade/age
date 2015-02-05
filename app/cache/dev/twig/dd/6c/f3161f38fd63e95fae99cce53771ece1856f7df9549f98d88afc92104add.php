@@ -20,7 +20,7 @@ class __TwigTemplate_dd6cf3161f38fd63e95fae99cce53771ece1856f7df9549f98d88afc921
 \tYour age breakdown is:
 \t";
         // line 3
-        echo twig_escape_filter($this->env, (isset($context["calculation"]) ? $context["calculation"] : $this->getContext($context, "calculation")), "html", null, true);
+        echo (isset($context["calculation"]) ? $context["calculation"] : $this->getContext($context, "calculation"));
         echo "
 </p>
 ";
