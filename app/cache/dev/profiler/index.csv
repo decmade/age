@@ -82,3 +82,8 @@ c3c85b,127.0.0.1,POST,http://localhost:8000/age,1423153689,
 57371f,127.0.0.1,GET,http://localhost:8000/age,1423153692,14514b
 14514b,127.0.0.1,GET,http://localhost:8000/age,1423153692,
 273eac,127.0.0.1,GET,http://localhost:8000/age/calculate/1979-08-08,1423154029,
+f68d75,127.0.0.1,GET,http://localhost:8000/age,1423154103,1020f5
+1020f5,127.0.0.1,GET,http://localhost:8000/age,1423154103,
+c55859,127.0.0.1,GET,http://localhost:8000/age,1423154144,1b687c
+1b687c,127.0.0.1,GET,http://localhost:8000/age,1423154144,
+ab017d,127.0.0.1,GET,http://localhost:8000/age,1423154426,
