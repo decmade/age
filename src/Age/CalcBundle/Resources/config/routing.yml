@@ -1,3 +1,6 @@
 age_calc_homepage:
     path:     /age
     defaults: { _controller: AgeCalcBundle:Default:index }
+age_calc_processor:
+    path: /age/calculate/{dob}
+    defaults: { _controller: AgeCalcBundle:Default:calculate }

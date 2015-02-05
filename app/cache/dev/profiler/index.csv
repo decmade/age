@@ -74,3 +74,11 @@ cdb869,127.0.0.1,POST,http://localhost:8000/age,1423153178,
 b27d54,127.0.0.1,GET,http://localhost:8000/input,1423153185,83805a
 83805a,127.0.0.1,GET,http://localhost:8000/input,1423153185,
 c48b4d,127.0.0.1,GET,http://localhost:8000/age,1423153192,
+0ddb8f,127.0.0.1,POST,http://localhost:8000/age,1423153470,
+cdf9da,127.0.0.1,POST,http://localhost:8000/age,1423153564,
+d81e32,127.0.0.1,GET,http://localhost:8000/age,1423153567,
+d6d906,127.0.0.1,GET,http://localhost:8000/age,1423153689,c3c85b
+c3c85b,127.0.0.1,POST,http://localhost:8000/age,1423153689,
+57371f,127.0.0.1,GET,http://localhost:8000/age,1423153692,14514b
+14514b,127.0.0.1,GET,http://localhost:8000/age,1423153692,
+273eac,127.0.0.1,GET,http://localhost:8000/age/calculate/1979-08-08,1423154029,

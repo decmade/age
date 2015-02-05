@@ -128,9 +128,17 @@ class appDevUrlMatcher extends Symfony\Bundle\FrameworkBundle\Routing\Redirectab
         }
 
         if (0 === strpos($pathinfo, '/a')) {
-            // age_calc_homepage
-            if ($pathinfo === '/age') {
-                return array (  '_controller' => 'Age\\CalcBundle\\Controller\\DefaultController::indexAction',  '_route' => 'age_calc_homepage',);
+            if (0 === strpos($pathinfo, '/age')) {
+                // age_calc_homepage
+                if ($pathinfo === '/age') {
+                    return array (  '_controller' => 'Age\\CalcBundle\\Controller\\DefaultController::indexAction',  '_route' => 'age_calc_homepage',);
+                }
+
+                // age_calc_processor
+                if (0 === strpos($pathinfo, '/age/calculate') && preg_match('#^/age/calculate/(?P<dob>[^/]++)$#s', $pathinfo, $matches)) {
+                    return $this->mergeDefaults(array_replace($matches, array('_route' => 'age_calc_processor')), array (  '_controller' => 'Age\\CalcBundle\\Controller\\DefaultController::calculateAction',));
+                }
+
             }
 
             // homepage
