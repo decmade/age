@@ -24,6 +24,6 @@ class DefaultController extends Controller
     	$age = $this->get('age');
     	$age->setBirthDate($dob);
     	
-    	return print_r($age, true);
+    	return print_r($age->getFullAge(), true);
     }
 }
