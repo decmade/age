@@ -21,6 +21,9 @@ class DefaultController extends Controller
      */
     public function calculateAction($dob)
     {
-    	return 'here';
+    	$age = $this->get('age');
+    	$age->setBirthDate($dob);
+    	
+    	return print_r($age, true);
     }
 }

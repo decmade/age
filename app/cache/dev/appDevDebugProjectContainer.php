@@ -40,6 +40,7 @@ class appDevDebugProjectContainer extends Container
         $this->scopeChildren = array('request' => array());
         $this->methodMap = array(
             'acme.demo.listener' => 'getAcme_Demo_ListenerService',
+            'age' => 'getAgeService',
             'annotation_reader' => 'getAnnotationReaderService',
             'assetic.asset_factory' => 'getAssetic_AssetFactoryService',
             'assetic.asset_manager' => 'getAssetic_AssetManagerService',
@@ -305,6 +306,19 @@ class appDevDebugProjectContainer extends Container
     protected function getAcme_Demo_ListenerService()
     {
         return $this->services['acme.demo.listener'] = new \Acme\DemoBundle\EventListener\ControllerListener($this->get('twig.extension.acme.demo'));
+    }
+
+    /**
+     * Gets the 'age' service.
+     *
+     * This service is shared.
+     * This method always returns the same instance of the service.
+     *
+     * @return \Age\Models\Age A Age\Models\Age instance.
+     */
+    protected function getAgeService()
+    {
+        return $this->services['age'] = new \Age\Models\Age();
     }
 
     /**
